@@ -26,7 +26,7 @@ public:
 class Eval_postfix{
     stack s;
 public:
-    float operation(char op,int a,int b){
+    float operation(char op,float a,float b){
         switch(op){
             case '+' : return (a+b);
                         break;
@@ -72,9 +72,9 @@ public:
             if(c == '+' || c == '-' || c == '*' || c == '/' || c == '^'){
 
                     
-                    int a = s.pop();
+                    float a = s.pop();
                    
-                    int b = s.pop();
+                    float b = s.pop();
                     
                     if(c == '^')
                         result=operation(c,a,b);
