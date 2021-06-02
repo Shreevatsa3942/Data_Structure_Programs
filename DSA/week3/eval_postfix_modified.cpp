@@ -9,16 +9,16 @@
 using namespace std;
 
 class stack{
-    int stack[100];
+    float stack[100];
     int top=-1;
 public:
-    void push(int var){
+    void push(float var){
         //cout<<"\n"<<var<<" pushed";
         top++;
         stack[top]=var;
     }
-    int pop(){
-        int item=stack[top];
+    float pop(){
+        float item=stack[top];
         top--;
         return item;
     }
@@ -26,7 +26,7 @@ public:
 class Eval_postfix{
     stack s;
 public:
-    int operation(char op,int a,int b){
+    float operation(char op,int a,int b){
         switch(op){
             case '+' : return (a+b);
                         break;
@@ -41,8 +41,8 @@ public:
         }
 	}
 
-    int evaluate(string postfix){
-        int result;
+    float evaluate(string postfix){
+        float result;
         char c;
         for(int i=0;i<postfix.length();i++){
             c=postfix[i];
