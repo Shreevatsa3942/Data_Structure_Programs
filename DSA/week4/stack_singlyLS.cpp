@@ -1,3 +1,7 @@
+/*Program to perform stack operation using singly linked list*/
+//Name:Shreevatsa
+//Regno: 200970093
+//Modified Date:04-06-2021
 #include<iostream>
 #include<string>
 using namespace std;
